@@ -1,0 +1,111 @@
+/* =========================
+   Intro Section
+========================= */
+
+.intro {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #050816;
+    color: #ffffff;
+
+    transition: opacity .6s ease;
+}
+
+/* Fade Out */
+
+.fade-out {
+    opacity: 0;
+}
+
+/* =========================
+   Profile Image
+========================= */
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin-bottom: 30px;
+
+    opacity: 0;
+    transform: scale(.8);
+
+    animation: profileFade 1s ease forwards;
+}
+
+@keyframes profileFade {
+    from {
+        opacity: 0;
+        transform: scale(.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* =========================
+   Name
+========================= */
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+    opacity: 0;
+    transform: translateX(-60px);
+
+    animation: titleFade .8s ease forwards;
+    animation-delay: .7s;
+}
+
+@keyframes titleFade {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* =========================
+   Subtitle
+========================= */
+
+.subtitle {
+    font-size: 20px;
+    color: #94a3b8;
+
+    opacity: 0;
+    transform: translateX(-60px);
+
+    animation: subtitleFade .8s ease forwards;
+    animation-delay: 1.2s;
+}
+
+@keyframes subtitleFade {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
