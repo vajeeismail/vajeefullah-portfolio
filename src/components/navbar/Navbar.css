@@ -25,3 +25,33 @@
 .navbar .active {
   color: white;
 }
+
+/* =========================
+   Responsive
+========================= */
+
+/* Large Mobile */
+@media (max-width:767px) {
+
+    .navbar {
+        height: 60px;
+    }
+
+    .navbar ul {
+        gap: 20px;
+    }
+
+    .navbar li {
+        font-size: 14px;
+    }
+
+}
+
+/* Tablet */
+@media (min-width:768px) and (max-width:991px) {
+
+    .navbar ul {
+        gap: 30px;
+    }
+
+}

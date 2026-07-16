@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import Intro from "./components/intro/Intro";
+import Intro from "./components/Intro/Intro";
 import Navbar from "./components/Navbar/Navbar";
 import Portfolio from "./pages/Portfolio/Portfolio";
 
