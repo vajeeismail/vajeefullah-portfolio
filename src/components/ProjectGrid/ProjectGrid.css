@@ -1,0 +1,34 @@
+/* =========================
+   Project Grid
+========================= */
+
+.project-grid {
+    width: 100%;
+
+    display: grid;
+    gap: 30px;
+
+    grid-template-columns: 1fr;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+/* Tablet */
+@media (min-width: 768px) {
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Laptop & Desktop */
+@media (min-width: 992px) {
+
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}

@@ -1,9 +1,18 @@
 import Hero from "../../components/Hero/Hero";
 import Folio from "../../components/Folio/Folio";
+import ProjectGrid from "../../components/ProjectGrid/ProjectGrid";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
+
+import projects from "../../data/projects";
 
 import "./Portfolio.css";
 
 function Portfolio() {
+
+    const softwareProjects = projects.filter(
+        (project) => project.category === "software"
+    );
+
     return (
         <main className="portfolio">
 
@@ -12,17 +21,39 @@ function Portfolio() {
                 <Hero />
 
                 <Folio title="Software Development">
-                    <h3>Project Grid Coming Soon...</h3>
+
+                    <ProjectGrid>
+
+                        {softwareProjects.map((project) => (
+
+                            <ProjectCard
+                                key={project.id}
+                                title={project.title}
+                                image={project.cover}
+                                link={`/project/${project.slug}`}
+                            />
+
+                        ))}
+
+                    </ProjectGrid>
+
                 </Folio>
 
                 <Folio title="Creative Design">
-                    <h3>Project Grid Coming Soon...</h3>
+
+                    <ProjectGrid>
+
+                        {/* Creative Design Projects Coming Soon */}
+
+                    </ProjectGrid>
+
                 </Folio>
 
             </div>
 
         </main>
     );
+
 }
 
 export default Portfolio;
