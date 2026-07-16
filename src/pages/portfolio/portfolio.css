@@ -1,13 +1,9 @@
 .portfolio {
-  width: 100%;
-  min-height: calc(100vh - 70px);
+    width: 100%;
+    min-height: calc(100vh - 70px);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background: var(--bg-primary);
-  color: var(--text-primary);
+    background: var(--bg-primary);
+    color: var(--text-primary);
 }
 
 /* =========================
@@ -15,20 +11,10 @@
 ========================= */
 
 /* Large Mobile */
-@media (max-width:767px) {
+@media (max-width: 767px) {
 
     .portfolio {
         min-height: calc(100vh - 60px);
-        padding: 40px 20px;
-    }
-
-}
-
-/* Tablet */
-@media (min-width:768px) and (max-width:991px) {
-
-    .portfolio {
-        padding: 60px 40px;
     }
 
 }
