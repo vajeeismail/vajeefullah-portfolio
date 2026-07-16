@@ -2,21 +2,21 @@
    Software Projects
 ========================= */
 
-import techcare from "../assets/projects/TechcareEcommerce/techcare-cover-img.png";
-import personal01 from "../assets/projects/PersonalWebsiteTemplate01/personalwebsite01-cover-img.png";
-import personal02 from "../assets/projects/PersonalWebsiteTemplate02/personalwebsite02-cover-img.png";
-import codenest from "../assets/projects/CodeNest/codenest-cover-img.png";
-import tictactoe from "../assets/projects/TicTacToe/tictactoe-cover-img.png";
-import accountbook from "../assets/projects/AccountBookUI/accountbook-cover-img.png";
-import weatherapp from "../assets/projects/WeatherApp/weatherapp-cover-img.png";
-import sorc from "../assets/projects/SROC/sorc-cover-img.png";
-import didak from "../assets/projects/DidakPOS/didak-cover-img.png";
+import techcare from "../assets/projects/Software/TechcareEcommerce/techcare-cover-img.png";
+import personal01 from "../assets/projects/Software/PersonalWebsiteTemplate01/personalwebsite01-cover-img.png";
+import personal02 from "../assets/projects/Software/PersonalWebsiteTemplate02/personalwebsite02-cover-img.png";
+import codenest from "../assets/projects/Software/CodeNest/codenest-cover-img.png";
+import tictactoe from "../assets/projects/Software/TicTacToe/tictactoe-cover-img.png";
+import accountbook from "../assets/projects/Software/AccountBookUI/accountbook-cover-img.png";
+import weatherapp from "../assets/projects/Software/WeatherApp/weatherapp-cover-img.png";
+import sorc from "../assets/projects/Software/SROC/sorc-cover-img.png";
+import didak from "../assets/projects/Software/DidakPOS/didak-cover-img.png";
 
 const projects = [
 
     {
         id: 1,
-        category: "software",
+        category: "Software",
         title: "Tech Care E-Commerce",
         slug: "tech-care",
         cover: techcare
@@ -24,7 +24,7 @@ const projects = [
 
     {
         id: 2,
-        category: "software",
+        category: "Software",
         title: "Personal Website Template 01",
         slug: "personal-website-template-01",
         cover: personal01
@@ -32,7 +32,7 @@ const projects = [
 
     {
         id: 3,
-        category: "software",
+        category: "Software",
         title: "Personal Website Template 02",
         slug: "personal-website-template-02",
         cover: personal02
@@ -40,7 +40,7 @@ const projects = [
 
     {
         id: 4,
-        category: "software",
+        category: "Software",
         title: "CodeNest",
         slug: "codenest",
         cover: codenest
@@ -48,7 +48,7 @@ const projects = [
 
     {
         id: 5,
-        category: "software",
+        category: "Software",
         title: "Tic Tac Toe",
         slug: "tic-tac-toe",
         cover: tictactoe
@@ -56,7 +56,7 @@ const projects = [
 
     {
         id: 6,
-        category: "software",
+        category: "Software",
         title: "Account Book UI",
         slug: "account-book-ui",
         cover: accountbook
@@ -64,7 +64,7 @@ const projects = [
 
     {
         id: 7,
-        category: "software",
+        category: "Software",
         title: "Weather App",
         slug: "weather-app",
         cover: weatherapp
@@ -72,7 +72,7 @@ const projects = [
 
     {
         id: 8,
-        category: "software",
+        category: "Software",
         title: "SORC",
         slug: "sorc",
         cover: sorc
@@ -80,7 +80,7 @@ const projects = [
 
     {
         id: 9,
-        category: "software",
+        category: "Software",
         title: "Didak POS",
         slug: "didak-pos",
         cover: didak

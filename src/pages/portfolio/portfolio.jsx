@@ -12,12 +12,10 @@ function Portfolio() {
 
     const [category, setCategory] = useState("all");
 
-    const filteredProjects =
-        category === "all"
-            ? projects
-            : projects.filter(
-                (project) => project.category === category
-            );
+    const filteredProjects = projects.filter((project) => {
+        if (category === "all") return true;
+        return project.category === category;
+    });
 
     return (
         <main className="portfolio">
@@ -27,14 +25,16 @@ function Portfolio() {
                 <Hero />
 
                 <div className="portfolio-filter">
+
                     <select
                         value={category}
                         onChange={(e) => setCategory(e.target.value)}
                     >
                         <option value="all">All Projects</option>
-                        <option value="software">Software Development</option>
-                        <option value="uiux">UI / UX Design</option>
-                        <option value="graphic">Graphic Design</option>
+                        <option value="Software">Software Development</option>
+                        <option value="UIUX">UI / UX Design</option>
+                        <option value="Graphics">Graphic Design</option>
+                        <option value="VideoEditing">Video Editing</option>
                     </select>
 
                 </div>
