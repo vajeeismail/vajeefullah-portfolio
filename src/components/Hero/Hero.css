@@ -5,7 +5,7 @@
 .hero {
     width: 100%;
 
-    padding: 80px 20px 60px;
+    padding: 60px;
 
     text-align: center;
 }
@@ -45,7 +45,7 @@
 @media (max-width: 767px) {
 
     .hero {
-        padding: 60px 20px 40px;
+        padding: 30px;
     }
 
     .hero-name {

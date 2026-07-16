@@ -4,7 +4,7 @@ function Folio({ title, children }) {
     return (
         <section className="folio">
 
-            <div className="folio-header">
+            {/* <div className="folio-header">
 
                 <h2 className="folio-title">
                     {title}
@@ -12,7 +12,7 @@ function Folio({ title, children }) {
 
                 <div className="folio-line"></div>
 
-            </div>
+            </div> */}
 
             <div className="folio-content">
                 {children}
