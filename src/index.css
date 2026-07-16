@@ -25,11 +25,37 @@ body,
     background: #050816;
 }
 
-body {
-    background: #050816;
-    color: #ffffff;
+/* =========================
+   Font Variables
+========================= */
 
-    font-family: Arial, Helvetica, sans-serif;
+:root {
+
+    --font-primary: "Poppins", sans-serif;
+    --font-signature: "Allura", cursive;
+
+        /* Background */
+    --bg-primary: #050816;
+    --bg-secondary: #0f172a;
+
+    /* Text */
+    --text-primary: #ffffff;
+    --text-secondary: #94a3b8;
+
+    /* Border */
+    --border-color: #1e293b;
+
+    /* Accent */
+    --accent: #38bdf8;
+    --accent-hover: #0ea5e9;
+
+}
+
+body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+
+    font-family: var(--font-primary);
 }
 
 a {

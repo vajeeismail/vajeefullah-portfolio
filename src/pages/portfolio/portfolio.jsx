@@ -1,9 +1,15 @@
+import Hero from "../../components/Hero/Hero";
+
+import "./Portfolio.css";
+
 function Portfolio() {
-  return (
-    <section className="portfolio">
-      <h1>Portfolio</h1>
-    </section>
-  );
+    return (
+        <main className="portfolio">
+
+            <Hero />
+
+        </main>
+    );
 }
 
 export default Portfolio;

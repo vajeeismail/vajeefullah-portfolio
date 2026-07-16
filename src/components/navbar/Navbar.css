@@ -1,13 +1,13 @@
 .navbar {
   width: 100%;
   height: 70px;
-  background: #050816;
+  background: var(--bg-primary);
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .navbar ul {
@@ -16,14 +16,14 @@
 }
 
 .navbar li {
-  color: #94a3b8;
+  color: var(--text-secondary);
   cursor: pointer;
   transition: .3s;
 }
 
 .navbar li:hover,
 .navbar .active {
-  color: white;
+  color: var(--text-primary);
 }
 
 /* =========================
