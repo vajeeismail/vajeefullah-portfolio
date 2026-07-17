@@ -1,57 +1,200 @@
-.navbar {
-  width: 100%;
-  height: 70px;
-  background: var(--bg-primary);
+/* =========================
+   Navbar
+========================= */
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navbar{
 
-  border-bottom: 1px solid var(--border-color);
+    width:100%;
+    height:70px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:var(--bg-primary);
+
+    border-bottom:1px solid var(--border-color);
+
+    transition:
+        background .35s ease,
+        box-shadow .35s ease,
+        backdrop-filter .35s ease;
+
+    z-index:999;
+
 }
 
-.navbar ul {
-  display: flex;
-  gap: 50px;
+/* =========================
+   Sticky
+========================= */
+
+.navbar.sticky{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    background:rgba(5,8,22,.85);
+
+    backdrop-filter:blur(14px);
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
+
+    animation:navbarSlide .35s ease;
+
 }
 
-.navbar li {
-  color: var(--text-secondary);
-  cursor: pointer;
-  transition: .3s;
+/* =========================
+   Menu
+========================= */
+
+.navbar ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:60px;
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
 }
 
-.navbar li:hover,
-.navbar .active {
-  color: var(--text-primary);
+/* =========================
+   Item
+========================= */
+
+.navbar li{
+
+    position:relative;
+
+    color:var(--text-secondary);
+
+    font-size:15px;
+
+    font-weight:500;
+
+    letter-spacing:.3px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+/* =========================
+   Underline
+========================= */
+
+.navbar li::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--accent);
+
+    border-radius:50px;
+
+    transition:.35s ease;
+
+}
+
+.navbar li:hover{
+
+    color:var(--text-primary);
+
+}
+
+.navbar li:hover::after{
+
+    width:100%;
+
+}
+
+.navbar .active{
+
+    color:var(--text-primary);
+
+}
+
+.navbar .active::after{
+
+    width:100%;
+
+}
+
+/* =========================
+   Sticky Animation
+========================= */
+
+@keyframes navbarSlide{
+
+    from{
+
+        transform:translateY(-100%);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
 }
 
 /* =========================
    Responsive
 ========================= */
 
-/* Large Mobile */
-@media (max-width:767px) {
+@media (max-width:767px){
 
-    .navbar {
-        height: 60px;
+    .navbar{
+
+        height:60px;
+
     }
 
-    .navbar ul {
-        gap: 20px;
+    .navbar ul{
+
+        gap:25px;
+
     }
 
-    .navbar li {
-        font-size: 14px;
+    .navbar li{
+
+        font-size:14px;
+
     }
 
 }
 
-/* Tablet */
-@media (min-width:768px) and (max-width:991px) {
+@media (min-width:768px) and (max-width:991px){
 
-    .navbar ul {
-        gap: 30px;
+    .navbar ul{
+
+        gap:40px;
+
     }
 
 }

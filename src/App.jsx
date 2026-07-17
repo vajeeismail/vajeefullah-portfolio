@@ -6,7 +6,11 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 
 import "./components/Intro/Intro.css";
 import "./components/Navbar/Navbar.css";
+import "./components/Footer/Footer.css";
+
 import "./pages/Portfolio/Portfolio.css";
+import Footer from "./components/Footer/Footer";
+
 
 function App() {
   const [showPortfolio, setShowPortfolio] = useState(false);
@@ -37,6 +41,7 @@ function App() {
     <>
       <Navbar />
       <Portfolio />
+      <Footer />
     </>
   );
 }

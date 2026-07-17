@@ -5,9 +5,12 @@
 /* =========================
    Filter
 ========================= */
+.portfolio {
+    padding-bottom: 150px;
+}
 
 .portfolio-filter {
-    margin: 0 0 20px;
+    margin: 0 0px 20px;
 }
 
 .portfolio-filter select {
@@ -56,6 +59,10 @@
 ========================= */
 
 @media (max-width: 767px) {
+
+    .portfolio {
+        padding-bottom: 150px;
+    }
 
     .portfolio-filter {
         margin: 10px 0 20px;
