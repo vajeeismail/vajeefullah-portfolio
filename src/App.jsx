@@ -8,6 +8,8 @@ import "./components/Intro/Intro.css";
 import "./components/Navbar/Navbar.css";
 import "./components/Footer/Footer.css";
 
+import WhatsappButton from "./components/WhatsappButton/WhatsappButton";
+
 import "./pages/Portfolio/Portfolio.css";
 import Footer from "./components/Footer/Footer";
 
@@ -41,6 +43,7 @@ function App() {
     <>
       <Navbar />
       <Portfolio />
+      <WhatsappButton />
       <Footer />
     </>
   );
