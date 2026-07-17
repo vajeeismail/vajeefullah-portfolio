@@ -161,7 +161,7 @@ const projects = [
         slug: "event-management-ui",
         cover: eventManage,
         previewType: "figma",
-        previewLink: "https://www.figma.com/proto/rwDiys3MLOLZB73RsgcLLK/Event-Book?node-id=14-974&starting-point-node-id=14%3A720",
+        previewLink: "https://www.figma.com/proto/rwDiys3MLOLZB73RsgcLLK/Event-Book?node-id=14-720&starting-point-node-id=14%3A720",
         responsive: true
     },
 
